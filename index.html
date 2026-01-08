@@ -26,26 +26,30 @@
     <main>
         <div class="main-picture">
             <picture>
+                <source media="(min-width: 48rem)" srcset="./src/images/medium-top-image.png" alt="Picture of an Omelette">
 
+                <source media="(min-width: 64rem)" srcset="./src/images/large-top-image.png" alt="Picture of an Omelette">
+
+                <img src="./src/images/small-top-image.png" alt="Picture of an Omelette">
             </picture>
         </div>
 
         <section class="main-section">
-            <div>
-                <h1>Simple Omelette Recipe</h1>
+            <div class="recipe-container">
+                <h1 class="recipe-title">Simple Omelette Recipe</h1>
                 <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
                     to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
             </div>
 
-            <div>
+            <div class="preparation-container">
                 <h3>Preparation time</h3>
             </div>
 
-            <div>
+            <div class="ingredients-container">
                 <h2>Ingredients</h2>
             </div>
 
-            <div>
+            <div class="instructions-container">
                 <h2>Instructions</h2>
                 <ol>
                     <li><span class="destaque-instrucao">Beat the eggs: </span>In a bowl, beat the eggs with a pinch of
