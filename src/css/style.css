@@ -5,7 +5,7 @@
     --stone-100: hsl(30, 54%, 90%);
     --Stone-150: hsl(30, 18%, 87%);
     --Stone-600: hsl(30, 10%, 34%);
-    -stone-900: hsl(24, 5%, 18%);
+    --stone-900: hsl(24, 5%, 18%);
 
     --brown-800: hsl(14, 45%, 36%);
 
@@ -25,23 +25,28 @@ body {
 
 
     min-height: 100dvh;
-    
+
 }
 
 
 
 
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    gap: 5rem;
+
 
     background-color: var(--white);
     max-width: 37.5rem;
 
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
 }
 
 
@@ -55,14 +60,48 @@ main{
 }
 
 
-
-
-
-
-
-
-
-
-.instructions-container{
-
+.main-containers{
+    margin-top: 4rem;
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
 }
+
+
+.recipe-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: clamp(3.6rem, 5vw, 4rem);
+    font-weight: 400;
+    color: var(--stone-900);
+    text-shadow: 0 0.4rem 0.4rem #0000001f;
+    text-align: left;
+    line-height: 100%;
+}
+
+
+.recipe-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 31.1rem;
+}
+
+
+.text-preset-4{
+    font-family: Outfit, sans-serif;
+    font-size: 1.6rem;
+    color: var(--Stone-600);
+    text-align: left;
+}
+
+
+.text-preset-2{
+    font-family: 'Young Serif', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: var(--brown-800);
+    text-align: left;
+}
+
+
+
+
+.instructions-container {}
