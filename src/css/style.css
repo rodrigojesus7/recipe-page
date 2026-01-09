@@ -43,10 +43,11 @@ main {
 
 }
 
-.main-section{
+.main-section {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    padding: 4rem 3.2rem;
 }
 
 
@@ -60,40 +61,99 @@ main {
 }
 
 
-.main-containers{
-    margin-top: 4rem;
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
-}
-
-
 .recipe-title {
     font-family: 'Young Serif', sans-serif;
     font-size: clamp(3.6rem, 5vw, 4rem);
     font-weight: 400;
     color: var(--stone-900);
-    text-shadow: 0 0.4rem 0.4rem #0000001f;
+    text-shadow: 0rem 0.4rem 0.4rem #0000001f;
     text-align: left;
     line-height: 100%;
 }
 
 
-.recipe-container{
+.recipe-container {
     display: flex;
     flex-direction: column;
-    max-width: 31.1rem;
+
+    min-width: 31.1rem;
+    min-height: 21.6rem;
+
+    gap: 2.4rem;
+}
+
+.preparation-container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--rose-50);
+    min-width: 31.1rem;
+    min-height: 19.6rem;
+
+    padding: 2.4rem;
+
+    border-radius: 1.2rem;
+
+    gap: 1.6rem;
+}
+
+.preparation-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding-left: 2.5rem;
+}
+
+.destaque {
+    font-weight: 800;
+}
+
+.preparation-ul li {
+    padding-left: 1.7rem;
+}
+
+.preparation-ul li::marker {
+    color: var(--rose-800);
 }
 
 
-.text-preset-4{
+.ingredients-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.ingredients-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.ingredients-container ul {
+    padding-left: 2.4rem;
+}
+
+.ingredients-container li {
+    padding-left: 1.7rem;
+}
+
+.ingredients-container li::marker {
+    color: var(--brown-800);
+}
+
+
+
+.text-preset-4 {
     font-family: Outfit, sans-serif;
     font-size: 1.6rem;
     color: var(--Stone-600);
     text-align: left;
+    line-height: 150%;
 }
 
 
-.text-preset-2{
+.text-preset-2 {
     font-family: 'Young Serif', sans-serif;
     font-size: 2.8rem;
     font-weight: 300;
@@ -101,7 +161,60 @@ main {
     text-align: left;
 }
 
+.text-preset-3 {
+    font-family: Outfit, sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    color: var(--rose-800);
+    font-weight: 600;
+}
 
 
 
-.instructions-container {}
+
+.instructions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.instructions-ol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding-left: 2.2rem;
+}
+
+.instructions-container li {
+    padding-left: 1.7rem;
+}
+
+.instructions-container li::marker {
+    color: var(--brown-800);
+}
+
+
+.nutrition-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.nutrition-table tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-left: 3.2rem;
+
+}
+
+.nutrition-table th {
+    font-weight: 400;
+}
+
+.nutrition-table td {
+    font-weight: 600;
+    color: var(--brown-800);
+}
