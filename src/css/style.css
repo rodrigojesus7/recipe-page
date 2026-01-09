@@ -124,6 +124,8 @@ main {
     gap: 2.4rem;
 }
 
+
+
 .ingredients-container ul {
     display: flex;
     flex-direction: column;
@@ -177,6 +179,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+    border-top: solid 0.1rem rgba(0, 0, 0, 0.164);
+    padding-top: 3.2rem;
 }
 
 .instructions-ol {
@@ -200,21 +204,30 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
+    border-top: solid 0.1rem rgba(0, 0, 0, 0.164);
+    padding-top: 3.2rem;
 }
 
-.nutrition-table tbody{
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-    padding-left: 3.2rem;
-
+.nutrition-table{
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .nutrition-table th {
     font-weight: 400;
 }
 
+.nutrition-table th, .nutrition-table td{
+    padding: 1.7rem 3.4rem;
+}
+
+.nutrition-table tr:not(:first-child){
+    border-top: solid 0.1rem rgba(0, 0, 0, 0.164);
+}
+
+
 .nutrition-table td {
     font-weight: 600;
     color: var(--brown-800);
 }
+
