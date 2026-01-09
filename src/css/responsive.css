@@ -35,3 +35,44 @@
 
 
 }
+
+
+
+
+
+
+@media(min-width: 64rem) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12.8rem 35.2rem;
+    }
+
+    main {
+        min-width: 73.6rem;
+        min-height: 170rem;
+        padding: 4rem;
+        border-radius: 2.4rem;
+    }
+
+    .main-section {
+
+        padding: 4rem 0 0 0;
+    }
+
+    .recipe-container {
+        min-width: 65.6rem;
+        min-height: 11.2rem;
+    }
+
+    .preparation-container {
+        min-width: 65.6rem;
+        min-height: 17.2rem;
+    }
+
+
+}
+

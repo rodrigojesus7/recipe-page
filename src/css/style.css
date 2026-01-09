@@ -197,6 +197,7 @@ main {
 
 .instructions-container li::marker {
     color: var(--brown-800);
+    font-weight: 800;
 }
 
 
@@ -227,7 +228,7 @@ main {
 
 
 .nutrition-table td {
-    font-weight: 600;
+    font-weight: 800;
     color: var(--brown-800);
 }
 
